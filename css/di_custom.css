@@ -1,0 +1,131 @@
+/* 
+Author: Di-Grand  
+URL: http://di-grand.com/
+Version: 1.0
+*/
+
+
+/* reset */
+* {padding: 0; margin: 0; -webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;} 
+html {overflow-y: scroll;overflow-x: hidden;}
+body { font-size: 14px; color: #5d5d5d; margin: 0px; padding: 0px; line-height: 1.3; } 
+h1, h2, h3, h4, h5, h6 .h1, .h2, .h3, .h4, .h5, .h6 {margin-top: 0; margin-bottom: 15px; display: block; line-height: 1;}
+h1, .h1 {font-size: 60px; text-align: center;}
+h2, .h2 {font-size: 48px;}
+h3, .h3 {font-size: 40px;}
+h4, .h4 {font-size: 20px;}
+h5, .h5 {font-size: 18px;}
+h6, .h6 {font-size: 60px; text-align: center;letter-spacing: 1.5px;}
+button {transition: 0.5s;border: 2px solid #823bb9; display: inline-block; text-transform: uppercase; font-size: 16px; color: #823bb9; padding: 14px 31.188px; background-color: transparent; outline: none!important;}
+.button {transition: 0.5s;border: 2px solid #823bb9; margin-top: 20px; display: inline-block; text-transform: uppercase; font-size: 16px; color: #823bb9; padding: 14px 31.188px; background-color: transparent; outline: none!important;}
+button:hover, button.active, .button:hover  {background-color: #823bb9;color: #fff; text-decoration: none; }
+p {margin-bottom: 20px; font-size: 16px;}
+a{color: #823bb9; text-decoration: none; cursor: pointer;}
+a:hover {color: #823bb9; text-decoration: underline;}
+img {height: auto; vertical-align: middle;  border: none; max-width: 100%;}
+b, strong {font-weight: bold;}
+form { padding: 0; margin: 0;display: block;}
+input  {outline: none!important; border: 1px solid #a0a0a0; background: #fff; padding:5px 10px; font-size: 16px; color: #000; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}      
+select { background: #F8F8F8; border: 1px solid #a0a0a0; padding: 2px;}
+label {cursor: pointer;}
+div {box-sizing: border-box;}
+ul, ol {padding: 0; margin: 0; list-style-type: none;}
+.clear {clear: both;}
+.rows {margin: 0 -15px;}
+
+
+
+@font-face {
+  font-family: 'MyriadPro-Semibold';
+  src: url('../fonts/MyriadPro-Semibold.eot?#iefix') format('embedded-opentype'),  url('../fonts/MyriadPro-Semibold.otf')  format('opentype'),
+	     url('../fonts/MyriadPro-Semibold.woff') format('woff'), url('../fonts/MyriadPro-Semibold.ttf')  format('truetype'), url('../fonts/MyriadPro-Semibold.svg#MyriadPro-Semibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyriadPro-Cond';
+  src: url('../fonts/MyriadPro-Cond.eot?#iefix') format('embedded-opentype'),  url('../fonts/MyriadPro-Cond.woff') format('woff'), url('../fonts/MyriadPro-Cond.ttf')  format('truetype'), url('../fonts/MyriadPro-Cond.svg#MyriadPro-Cond') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MonotypeCorsiva';
+  src: url('../fonts/MonotypeCorsiva.eot?#iefix') format('embedded-opentype'),  url('../fonts/MonotypeCorsiva.woff') format('woff'), url('../fonts/MonotypeCorsiva.ttf')  format('truetype'), url('../fonts/MonotypeCorsiva.svg#MonotypeCorsiva') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {background: url(../images/fon_pink.jpg) repeat; font-family: 'MonotypeCorsiva';}
+.di_line_top {background: url(../images/green_top.png) repeat-x; height: 29px;}
+.di_hotite_pohudet {color: #ffffff; text-align: center; width: 90.5%; padding-left: 53px;}
+.di_hotite_pohudet h1 {font-size: 62.5px; padding-top: 5px; margin-bottom: 1px; letter-spacing: 1px; text-shadow: 0px 2px 2px rgba(32, 30, 29, 0.38); text-shadow: -0 -1px 0 #545454, 0 -1px 0 #545454, -0 1px 0 #545454, 0 1px 0 #545454, -1px -0 0 #545454, 1px -0 0 #545454, -1px 0 0 #545454, 1px 0 0 #545454, -1px -1px 0 #545454, 1px -1px 0 #545454, -1px 1px 0 #545454, 1px 1px 0 #545454, -1px -1px 0 #545454, 1px -1px 0 #545454, -1px 1px 0 #545454, 1px 1px 0 #545454;}
+.di_hotite_pohudet p {padding-bottom: 4px; letter-spacing: 0.5px; font-size: 25px; margin-bottom: 0; text-shadow: 0px 2px 2px rgba(32, 30, 29, 0.38); text-shadow: -0 -1px 0 #545454, 0 -1px 0 #545454, -0 1px 0 #545454, 0 1px 0 #545454, -1px -0 0 #545454, 1px -0 0 #545454, -1px 0 0 #545454, 1px 0 0 #545454, -1px -1px 0 #545454, 1px -1px 0 #545454, -1px 1px 0 #545454, 1px 1px 0 #545454, -1px -1px 0 #545454, 1px -1px 0 #545454, -1px 1px 0 #545454, 1px 1px 0 #545454;}
+.di_left_side {padding-top: 33px;}
+.di_left_side h2 {margin-bottom: 7px; color: #42711a; font-size: 41.67px; text-align: center; font-weight: normal;}
+.di_hotite_pohudet_fon {margin-bottom: 17px; background: url(../images/fon_green.png) repeat-x; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;}
+.di_gotovie_raciony .di_spisok h3 {text-indent: -95px; padding-left: 8px; margin-bottom: 1px; font-size: 41.67px; color: #4b4b4b; font-weight: normal;}
+.di_gotovie_raciony .di_spisok h3:after {content: ""; display: inline-block; position: absolute; background: url(../images/sheff.png) no-repeat; width: 81px; height: 81px; top: 27px; right: 31px;}
+.di_gotovie_raciony .di_spisok ul li {font-size: 25px; color: #417019; padding-left: 49px; position: relative; line-height: 1.4;}
+.di_gotovie_raciony .di_spisok ul li:hover {color: #518029; text-decoration: underline; cursor: default;}
+.di_gotovie_raciony .di_spisok ul li:before {top: -3px;position: absolute; left: 0; content: ""; background: url(../images/galochka.png) no-repeat; display: inline-block; width: 35px; height: 31px;}
+.di_gotovie_raciony .di_spisok p {padding-right: 9px; text-align: right; margin-bottom: 0px; font-size: 20.83px; color: #4b4b4b;}
+.di_gotovie_raciony .di_spisok {float: right; padding-top: 37px; padding-right: 27px;}
+.di_gotovie_raciony .di_spisok ul {margin-bottom: 31px; padding-left: 14px; padding-top: 20px;}
+.di_gotovie_raciony {background: url(../images/cveti.png) no-repeat 5px 0; padding-top: 8px; padding-bottom: 20px;}
+.di_social p {font-size: 25px; color: #4b4b4b; margin-top: 7px; padding-right: 35px; margin-bottom: 6px;}
+.di_social {text-align: right; padding-right: 47px;}
+.di_social_vn a {display: inline-block;}
+.di_social_vn a:hover {opacity: 0.7;}
+.di_vk {margin-right: 13px;}
+.di_right_side {padding-top: 16px;}
+#messegeResult {padding-top: 7px; padding-bottom: 3px; background: url(../images/fon_blue.png) repeat; color: white; font-size: 38px; text-align: center; -webkit-border-radius: 4px 4px 0 0; -moz-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0;}
+.wrapper {padding: 0 0 0 27px; width: 88.3%;}
+.di_radio_wrap label {position: relative; display: block; color: #424242; font-size: 21.29px; line-height: 35px;}
+.di_radio_wrap {margin-bottom: 25px; padding-top: 33px; padding-left: 18px; background: url(../images/shapka.png) no-repeat 98% 56%;}
+.di_radio_wrap label span {padding-left: 17px; color: #87c227; font-size: 30.41px;}
+.di_radio_wrap label #radio {position: absolute; top: 35%; top: calc(50% - 6.5px); left: -13px;}
+.di_radio_wrap label i {color: #ff6a07; font-size: 30.41px;}
+form#cForm2 {display: inline-block; padding: 0 25px 14px 21px; background: url(../images/uzor_white.jpg); border: 1px solid #b6b7b8; border-top: none; -webkit-box-shadow: 0px 6px 8px 0px rgba(151, 149, 149, 0.75); -moz-box-shadow: 0px 6px 8px 0px rgba(151, 149, 149, 0.75); box-shadow: 0px 6px 8px 0px rgba(151, 149, 149, 0.75); -webkit-border-radius: 0 0 4px 4px; -moz-border-radius: 0 0 4px 4px; border-radius: 0 0 4px 4px;}
+form#cForm2 input[type="text"], form#cForm2 input[type="email"], .tel {width: 100%; margin-bottom: 14px; letter-spacing: 0.5px;}
+form#cForm2 input[type="button"] {background: url(../images/button_green.png); color: white; padding: 2px 10.71px; font-size: 16.6px; border: none; float: right;}
+form#cForm2 input[type="button"]:hover {opacity: 0.6;}
+.di_tel_wrap {display: block;}
+.di_tel_wrap ::-webkit-input-placeholder {color:#a91fa0; font-family: 'MyriadPro-Cond'; font-size: 18.25px; letter-spacing: 0.5px;}
+.di_tel_wrap ::-moz-placeholder {color:#a91fa0; font-family: 'MyriadPro-Cond'; font-size: 18.25px; letter-spacing: 0.5px;}
+.di_tel_wrap :-moz-placeholder {color:#a91fa0; font-family: 'MyriadPro-Cond'; font-size: 18.25px; letter-spacing: 0.5px;}
+.di_tel_wrap :-ms-input-placeholder {color:#a91fa0; font-family: 'MyriadPro-Cond'; font-size: 18.25px; letter-spacing: 0.5px;}
+.tel {font-size: 18.25px; letter-spacing: 0.5px; font-family: 'MyriadPro-Cond'; color:#a91fa0; padding-bottom: 2px;}
+.di_left_side:after {content: ""; background: url(../images/arrow_green.png) no-repeat; display: inline-block; position: absolute; padding: 0; padding: 31px 92px; top: 36px; right: -128px;}
+.di_line_green {background: url(../images/green_cveti.png) repeat-x; height: 38px; color: white; text-transform: uppercase; font-family: 'MyriadPro-Semibold'; font-size: 20.83px;}
+ 
+.di_line_green .container .row {padding-left: 52px; padding-top: 6px;}
+.form-submit span {display: block;}
+#owl-demo .item img{isplay: block; width: 100%; height: auto;}
+#owl-demo {padding-left: 30px; margin-left: 8px;}
+.di_carousel {padding: 22px 0 16px 0;}
+.di_interesno_item {line-height: 22px; padding-top: 33px; width: 106px; height: 106px; display: inline-block; color: white; font-size: 29.17px; background: url(../images/shar_new.png) no-repeat;}
+.di_interesno_item:hover {color: white; text-decoration: none; background-position: 0 100%;}
+.di_interesno_item_wrapper {padding-bottom: 56px; text-align: center; padding-left: 35px; padding-top: 57px;}
+.di_interesno_item:hover:after {content: ""; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; border: 6px solid white; position: absolute; width: 118px; height: 118px; top: 51px; left: 57px; -webkit-box-shadow: 0px 11px 11px 0px rgba(32, 30, 29, 0.75); -moz-box-shadow: 0px 11px 11px 0px rgba(32, 30, 29, 0.75); box-shadow: 0px 11px 11px 0px rgba(32, 30, 29, 0.75);}
+.di_interesno_item div:last-child {font-size: 20.83px;}
+.di_line_down {background: url(../images/green_bottom.png) repeat-x; height: 38px;}
+.di_line_down a {padding-left: 56px; padding-top: 8px; color: white; font-size: 16.67px; font-family: 'MyriadPro-Cond'; text-decoration: underline; display: inline-block; float: left;}
+.di_line_down a:hover {color: white; text-decoration: none;}
+.di_line_down span {padding-right: 2px; padding-top: 8px; font-size: 16.67px; color: #939393; font-family: 'MyriadPro-Cond'; display: inline-block; float: right;}
+#messegeResult p {margin-bottom: 0; font-size: 20px;}
+.di_interesno_item:focus {outline: none; color: white; text-decoration: none;}
+
+
+/* Контактная форма */
+.messenger_load {text-align: center;font-size: 14px; color: green;}
+.messenger_send {margin-top: 20px;  text-align: center;}
+.messenger_send > span {display: block; font-weight: bold; font-size: 24px; color: green;}
+.messenger_send span span {font-size: 14px;}
+.messenger_error {margin-top: 20px;  text-align: center;}
+.messenger_error > span {display: block; font-weight: bold; font-size: 24px; color: #a81d9e;}
+.messenger_error span span {font-size: 14px;}
+.messenger_error ol{text-align: left;counter-reset: myCounter;}
+.messenger_error li{margin-bottom: 10px;  font-size: 16px;color: #4b4b4b;list-style: none;}
+.messenger_error li:before {counter-increment: myCounter;content:counter(myCounter);color: white;background: #a81d9e;display: inline-block;text-align: center;margin: 0px 5px 1px 0px;line-height: 22px;width: 20px;height: 20px;font-size: 13px;}
